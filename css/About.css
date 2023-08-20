@@ -1,0 +1,238 @@
+ /* universal style  */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+html,body,#header {
+    height: 100%;
+    width: 100%;
+    
+}
+
+#about {
+    background-color: #eeeeee;
+}
+#about h1 {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: 6px;
+    word-spacing: 7px;
+
+}
+#about img {
+    position: relative;
+    top: 50px;
+    left: 44%;
+}
+
+#heading {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 10%;
+    background-color: white;
+}
+#summery {
+    margin: 0 50px;
+    width: 100%;
+    /* border: 2px solid red;  */
+
+}
+#summery h2 {
+    font-size: 38px;
+    text-transform: capitalize;
+    color: #000000bd;
+}
+#summery p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+#heading img {
+    height: 35vw;
+    margin-top: 20px;
+}
+
+/* number */
+
+#number {
+    background-color: black;
+    height: 5cm;
+    color: white;
+    text-transform: capitalize;
+}
+#number h3 {
+    text-align: center;
+    padding: 25px 0;
+    font-size: 31px;
+    word-spacing: 5px;
+}
+#NoOfProduct {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#products {
+    font-size: 25px;
+}
+#products p {
+    text-align: center;
+}
+
+/* certified */
+
+#certified-products {
+    display: flex;
+    justify-content: space-around;
+    
+}
+#p-feedback {
+    width: 33%;
+    margin-top: 60px;
+    border: none;
+    box-shadow: none;
+    background-color: rgb(211, 211, 211);
+}
+#p-feedback #scrol_img {
+    height: 55vh;
+    padding-top: 4px;
+    padding-left: 7px;
+    /* position: relative;
+    top: 40px;
+    left: 75px;   */
+}
+#p-feedback p {
+    padding-left: 38px;
+    padding-top: 10px;
+    width: 100%;
+
+}
+
+#cretified {
+    margin-top: 3cm;
+    /* display: flex;
+    align-items: flex-start; */
+
+}
+#cretified img {
+    float: left;
+}
+#cretified .head {
+    width: 9cm;
+    padding-top: 25px;
+    float: right;
+    
+}
+#cretified .head h2 {
+    padding-bottom: 10px;
+    font-size: 25px;
+    text-transform: capitalize;
+    
+}
+#text {
+    clear: both;
+    text-transform: capitalize;
+    
+}
+#text h1 {
+    padding-top: 10px;
+    padding-left: 2cm;
+    font-size: 30px;
+}
+#item-list {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    /* margin-left: 36px; 
+    /* padding-right: 76px;  */
+}
+#item-list ul li {
+    font-size: 20px;
+    padding: 5px;
+    text-transform: uppercase;
+}
+#btn {
+    margin-top: 25px;
+    width: 25vh;
+
+}
+
+/* responsive design */
+
+@media screen and (max-width:1025px) {
+    #summery .sec-para {
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width:770px) {
+    #about img {
+        display: none;
+    }
+    #summery {
+        margin: 0;
+        
+    }
+    #heading {
+        flex-direction: column;
+        margin-top: 2px;
+    }
+    #summery p {
+        text-align: center;
+        width: 100%;
+        
+    }
+    #summery h2 {
+        text-align: center;
+        width: 100%;
+        margin-top: 25px;
+        background-color: #e1ebeb;
+        
+    }
+     #heading img {
+    /* border: 3px solid red; */
+        height: 35vw;
+        margin-left: 50%;
+    }
+    #certified-products {
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+    }
+    #p-feedback {
+        /* border: 1px solid black; */
+        width: 95%;
+        margin-top: 15px;
+        margin-bottom: 0;
+        background: linear-gradient(180deg , blue ,green ,pink ,red);
+    }
+    #p-feedback #scrol_img {
+        /* border: 1px solid blue; */
+        width: 50%;
+        margin-left: 26%;
+        opacity: 0.7;
+    }
+    #btn {
+        border: 2px solid pink;
+        /* margin-left: auto; */
+        /* margin-right: auto; */
+        margin: 0;
+        margin-left: 10%;
+        margin-bottom: 20px;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:430px) {
+    #p-feedback #scrol_img {
+        height: 30%;
+        width: 70%;
+        margin: 0;
+        margin-left: 15%;
+        
+    }
+    
+}

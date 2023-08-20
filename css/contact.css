@@ -1,0 +1,73 @@
+#title h1 {
+    font-size: 60px;
+    color: #3f51b5a1;
+    /* background-color: pink; */
+    text-transform: uppercase;
+    margin-top: 85px;
+    text-align: center;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    font-family: emoji;
+}
+#contact {
+        /* border: 2px solid red; */
+        margin-top: 50px;
+        width: 90%;
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 45px;
+        background-color: #F5F5F5;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+}
+#contact .box {
+    width: 10cm;
+    height: 7cm;
+    border: 2px solid #00000057;
+    /* padding: 3px; */
+    /* font-size: 20px; */
+    color: #000000bd;
+    /* position: relative; */
+    text-align: center;
+    border-radius: 5px;
+    background-color: white;
+}
+#contact p {
+    font-size: 20px;
+    position: relative;
+    top: 85px;
+    margin-bottom: 8px;
+    font-family: inherit;
+}
+#contact i {
+    position: relative;
+    top: 70px;
+}
+
+
+/* responsive web design */
+
+
+@media screen and (max-width:1200px) {
+    
+    #contact {
+        /* border: 2px solid rebeccapurple; */
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    #contact .box {
+        /* border: 2px solid red; */
+        margin-bottom: 20px;
+        
+    }
+    
+}
+
+@media screen and (max-width: 325px) {
+    #title h1 {
+        font-size: 35px;
+    }
+}

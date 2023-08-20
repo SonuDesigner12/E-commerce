@@ -1,0 +1,121 @@
+ /* universal style  */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+html,body,#header {
+    height: 100%;
+    width: 100%;
+    background-color: #eeeded;
+}
+#shop-head {
+   
+    padding-top: 50px;
+    padding-left: 20px;
+    width: 80%;
+    margin: 0 auto;
+
+}
+#shop-head a {
+    color: rgba(118, 118, 118, 0.819);
+    text-decoration: none;
+    font-size: 18px;
+
+}
+#shop-head a:hover {
+    color: green;
+}
+#shop-head h1 {
+    font-size: 80px;
+    color: #A1887F;
+    font-weight: 700;
+    padding-top: 10px;
+    margin-bottom: 10px;
+
+}
+/* item style */
+
+#item {
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: space-evenly;
+    /* overflow: hidden; */
+    flex-wrap: wrap;
+}
+
+#item .i-one {
+    width: 30%;
+    height: 45vh;
+    /* border: 2px solid red; */
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+}
+#item .i-one a img {
+    height: 65%;
+    /* margin-left: -1.22cm; */
+    
+}
+#item .i-one  a{
+    /* text-align: center; */
+    margin-left: 55px;
+    /* padding: 0; */
+    font-size: 18px;
+    color: #3c3a3ade;
+    text-decoration: none;
+    margin-top: 2px;
+    text-transform: capitalize;
+}
+#item .i-one  a:hover {
+    color: green;
+}
+#item .i-one p{
+    /* text-align: left; */
+    margin-left: 55px;
+    font-size: 20px;
+    padding-top: 2px;
+}
+
+
+/* Groceries page style */
+
+#shop-head p{
+    font-size: 2.1vh;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-left: 25px;
+    word-spacing: 8px;
+    color: #000000c7;
+}
+
+
+
+/* responsive design */
+
+
+@media screen and (max-width:768px) {
+    #item {
+        /* border: 2px solid red; */
+        width: 100%;
+    }
+    #item .i-one {
+        /* border: 2px solid black; */
+        width: 45vh;
+    }
+    
+}
+
+@media screen and (max-width:425px) {
+    
+    #item .i-one {
+        /* border: 2px solid blue; */
+        width: 45vh;
+    }
+    
+}
